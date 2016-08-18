@@ -10,6 +10,4 @@ set smartindent
 set hidden
 
 syntax on
-set t_Co=256
-set term=xterm+256color
 colorscheme desert
