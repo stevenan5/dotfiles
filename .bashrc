@@ -87,11 +87,6 @@ fi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# some more ls aliases
-#alias ll='ls -l'
-#alias la='ls -A'
-#alias l='ls -CF'
-
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -125,3 +120,36 @@ PS2='\[\033[01;36m\]>'
 export LS_OPTIONS='--color=auto'
 eval "`dircolors`"
 alias ls='ls $LS_OPTIONS'
+
+#ls aliases
+alias lal='ls -al'
+alias ll='ls -l'
+alias la='ls -A'
+alias l='ls -CF'
+
+#git aliases
+alias gits='git status'
+alias gitd='git diff'
+alias gita='git add'
+alias gitc='git commit -m'
+alias gitph='git push'
+alias gitp='git pull'
+alias gitch='git checkout'
+alias gitchb='git checkout -b'
+alias gitr='git reset'
+
+#add matlab to PATH
+export PATH="${PATH}:/usr/local/MATLAB/R2021a/bin/"
+
+#keychain setup
+/usr/bin/keychain $HOME/.ssh/id_ed25519
+source $HOME/.keychain/$HOSTNAME-sh
+
+#python3 alias
+alias python3='python3.9'
+alias pip='sudo python3.9 -m pip'
+
+#gurobi setup
+export GUROBI_HOME="/opt/gurobi912/linux64"
+export PATH="${PATH}:${GUROBI_HOME}/bin"
+export LD_LIBRARY_PATH="${GUROBI_HOME}/lib"
