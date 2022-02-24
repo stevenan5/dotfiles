@@ -59,6 +59,9 @@ function! TildeSwitch()
     endif
 endfunction
 
+" call tildeswitch
+nnoremap <silent> ~ :silent call TildeSwitch() <Cr>
+
 " vim-plug
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-easy-align'
