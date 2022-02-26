@@ -142,7 +142,7 @@ $0
 endsnippet
 
 context "math()"
-snippet case "cases" wA
+snippet cases "cases" wA
 \begin{cases}
 	$1
 \end{cases}
@@ -303,22 +303,27 @@ snippet \\\ "setminus" iA
 \setminus
 endsnippet
 
-snippet >= "geq" ia
+context "math()"
+snippet >e "geq" iA
 \geq
 endsnippet
 
-snippet <= "leq" ia
+context "math()"
+snippet <e "leq" iA
 \leq
 endsnippet
 
-snippet >> ">>" ia
+context "math()"
+snippet >> ">>" iA
 \gg
 endsnippet
 
-snippet << "<<" ia
+context "math()"
+snippet << "<<" iA
 \ll
 endsnippet
 
+context "math()"
 snippet ~~ "~" iA
 \sim
 endsnippet
@@ -328,6 +333,7 @@ snippet set "set" wA
 \\{$1\\} $0
 endsnippet
 
+context "math()"
 snippet || "mid" iA
 \mid
 endsnippet
@@ -337,6 +343,7 @@ snippet cc "subset" Ai
 \subset
 endsnippet
 
+context "math()"
 snippet notin "not in " iA
 \not\in
 endsnippet
