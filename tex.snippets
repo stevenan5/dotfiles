@@ -72,8 +72,18 @@ snippet align "Align" bA
 \end{align*}
 endsnippet
 
+context "math()"
+snippet bold "Bold" iA
+\textbf{${1:${VISUAL}}} $0
+endsnippet
+
 snippet bold "Bold" i
 \textbf{${1:${VISUAL}}} $0
+endsnippet
+
+context "math()"
+snippet ital "Italicize" iA
+\textit{${1:${VISUAL}}} $0
 endsnippet
 
 snippet ital "Italicize" i
