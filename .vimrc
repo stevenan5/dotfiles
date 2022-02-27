@@ -54,6 +54,18 @@ function! TildeSwitch()
         normal! r_
     elseif curr_char == '_'
         normal! r^
+    elseif curr_char == '('
+        normal! r)
+    elseif curr_char == ')'
+        normal! r(
+    elseif curr_char == '['
+        normal! r]
+    elseif curr_char == ']'
+        normal! r[
+    elseif curr_char == '{'
+        normal! r}
+    elseif curr_char == '}'
+        normal! r{
     else
         normal! ~
     endif
@@ -64,11 +76,16 @@ nnoremap <silent> ~ :silent call TildeSwitch() <Cr>
 
 " vim-plug
 call plug#begin('~/.vim/plugged')
+Plug 'unblevable/quick-scope'
 Plug 'junegunn/vim-easy-align'
 Plug 'lervag/vimtex'
 Plug 'dense-analysis/ale'
 Plug 'sirver/ultisnips'
 call plug#end()
+
+" quick-scope config
+" Trigger a highlight in the appropriate direction when pressing these keys:
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
 " ultisnips config
 "Plug 'sirver/ultisnips'
