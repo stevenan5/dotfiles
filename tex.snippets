@@ -8,6 +8,10 @@ def env(name):
 	return x != '0' and y != '0'
 endglobal
 
+snippet '(?<!\\)[sub]*section' "[sub]*section" rb
+\\`!p snip.rv = match.group(0)`{$1}$0
+endsnippet
+
 snippet beg "begin environment" b
 \\begin{$1}
 	$0
