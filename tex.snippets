@@ -112,6 +112,11 @@ snippet '(?<!\\)(frac)' "Fraction" riA
 endsnippet
 
 context "math()"
+snippet ifrac "Fraction" iA
+(${1:${VISUAL}})/($2) $0
+endsnippet
+
+context "math()"
 snippet '(?<!\\)(sqrt)' "Square Root" riA
 \sqrt{${1:${VISUAL}}} $0
 endsnippet
