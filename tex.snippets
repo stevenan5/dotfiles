@@ -263,17 +263,37 @@ snippet '(?<!\\)(sin|cos|tan|ln|log|exp|top|dagger|prime|colon)' "ln" rwA
 endsnippet
 
 context "math()"
-snippet '(?<!\\)(alpha|beta|gamma|delta|epsilon|zeta|eta)' "ln" rwA
+snippet '(?<!\\)(alpha|beta|zeta|chi|tau)' "lowercase greek letters" rwA
 \\`!p snip.rv = match.group(1)`
 endsnippet
 
 context "math()"
-snippet '(?<!\\)(theta|iota|kappa|lambda|mu|nu|xi|omicron)' "ln" rwA
+snippet '(?<!\\)(iota|kappa|mu|nu|omicron)' "lowercase greek letters 2" rwA
 \\`!p snip.rv = match.group(1)`
 endsnippet
 
 context "math()"
-snippet '(?<!\\)(?<!e)(pi|rho|sigma|tau|upsilon|phi|chi|psi|omega)' "ln" rwA
+snippet '(?<!\\)([gG]amma|[dD]elta|[lL]ambda|[xX]i|[uU]psilon)' "lower/uppercase greek letters" rwA
+\\`!p snip.rv = match.group(1)`
+endsnippet
+
+context "math()"
+snippet '(?<!\\)([pP]hi|(?<![euU])[pP]si|(?<![tT]h)eta|[oO]mega)' "lower/uppercase greek letters 2" rwA
+\\`!p snip.rv = match.group(1)`
+endsnippet
+
+context "math()"
+snippet '(?<!\\)([var]*epsilon|[var]*rho)' "lowercase greek letters with var variant" rwA
+\\`!p snip.rv = match.group(1)`
+endsnippet
+
+context "math()"
+snippet '(?<!\\)((varp|(?<!var)[pP])i|(vars|(?<!var)[sS])igma)' "lower/uppercase greek letters with var variant" rwA
+\\`!p snip.rv = match.group(1)`
+endsnippet
+
+context "math()"
+snippet '(?<!\\)((vart|(?<!var)[tT])heta)' "lower/uppercase greek letters with var variant 2" rwA
 \\`!p snip.rv = match.group(1)`
 endsnippet
 
