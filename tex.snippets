@@ -12,6 +12,10 @@ snippet '(?<!\\)[sub]*section' "[sub]*section" rb
 \\`!p snip.rv = match.group(0)`{$1}$0
 endsnippet
 
+snippet '[iI]e' "i.e." rwA
+`!p snip.rv = match.group(0)[0]`.e.~
+endsnippet
+
 snippet beg "begin environment" b
 \\begin{$1}
 	$0
