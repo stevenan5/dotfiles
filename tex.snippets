@@ -287,7 +287,7 @@ snippet '(?<!\\)([pP]hi|(?<![euU])[pP]si|(?<![tT]h)eta|[oO]mega)' "lower/upperca
 endsnippet
 
 context "math()"
-snippet '(?<!\\)([var]*epsilon|[var]*rho)' "lowercase greek letters with var variant" rwA
+snippet '(?<!\\)(?<!\\var)((var)*epsilon|(var)*rho)' "lowercase greek letters with var variant" rwA
 \\`!p snip.rv = match.group(1)`
 endsnippet
 
