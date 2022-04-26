@@ -49,8 +49,8 @@ snippet ref "Reference" i
 \ref{${1:${VISUAL}}} $0
 endsnippet
 
-snippet cite "Cite" i
-\cite{${1:${VISUAL}}} $0
+snippet '(cite[tp]*)' "Cite" ri
+\\`!p snip.rv = match.group(1)`{${1:${VISUAL}}} $0
 endsnippet
 
 snippet label "Label" i
