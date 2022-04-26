@@ -70,7 +70,7 @@ snippet item "Itemize" b
 endsnippet
 
 snippet mm "Math" w
-$${1}$`!p
+$${1:${VISUAL}}$`!p
 if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
 	snip.rv = ' '
 else:
