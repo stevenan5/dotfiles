@@ -258,7 +258,12 @@ snippet d.. "ddots" iA
 endsnippet
 
 context "math()"
-snippet '(?<!\\)(sin|cos|tan|ln|log|exp|top|dagger|prime|colon|mid|neq)' "ln" rwA
+snippet '(?<!(\\|l))(ln)' "ln" rwA
+\\`!p snip.rv = match.group(1)`
+endsnippet
+
+context "math()"
+snippet '(?<!\\)(sin|cos|tan|log|exp|top|dagger|prime|colon|mid|neq)' "random symbols" rwA
 \\`!p snip.rv = match.group(1)`
 endsnippet
 
